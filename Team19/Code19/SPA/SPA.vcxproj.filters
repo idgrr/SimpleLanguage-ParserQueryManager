@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\PKB">
+      <UniqueIdentifier>{da0cfc7d-bae2-4ffd-a7a8-2513752862a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QP">
+      <UniqueIdentifier>{01f7fc5d-41d6-4845-bb17-d6c984582501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP">
+      <UniqueIdentifier>{cac51661-a79a-4172-9534-2b22d71fec85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\QP">
+      <UniqueIdentifier>{1c8e0d08-7cb3-4929-acde-57508df8f4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PKB">
+      <UniqueIdentifier>{01f1d918-9337-4075-853e-d5095968aac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP">
+      <UniqueIdentifier>{8d735bdf-3710-4101-9ca2-96b695f41919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SP\DesignExtractor">
+      <UniqueIdentifier>{8d91a682-e24c-45d7-a6e0-c6984a50b249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SP\DesignExtractor">
+      <UniqueIdentifier>{f2f29e5e-7fc5-4cbf-aedd-a15f1be046f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\TNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\DesignEntity.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\Declaration.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\AST.cpp">
+      <Filter>Source Files\SP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Entity\Entity.cpp">
+      <Filter>Source Files\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Parser.cpp">
+      <Filter>Source Files\SP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\EntityStorage.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Manager\EntityManager.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\PatternClause.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\PKBFacade.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\PatternStorage.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Manager\PatternManager.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryParser.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\QueryObject.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryManager.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\QueryEvaluator.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorage.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\PKB\Manager\RelationshipManager.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\SelectSynonymEvaluator.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryEvaluator\ResultConsolidator.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\SPTokenizer.cpp">
+      <Filter>Source Files\SP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\QP\QueryObject\SuchThatClause.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ValidatorUtil.cpp">
+      <Filter>Source Files\QP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\FollowsExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\ModifiesExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\ParentExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\UsesExtractor.cpp">
+      <Filter>Source Files\SP\DesignExtractor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SourceProcessor\Parser.cpp">
+      <Filter>Source Files\SP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Pattern\Pattern.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Relationship\Relationship.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Entity\Entity.cpp">
+      <Filter>Source Files\PKB</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\SourceProcessor\AST.h">
+      <Filter>Header Files\SP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\Declaration.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\DesignEntity.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Manager\EntityManager.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\EntityStorage.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\PatternClause.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Manager\PatternManager.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\PatternStorage.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Relationship\Relationship.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Manager\RelationshipManager.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorage.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\QueryEvaluator.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\QueryObject.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryManager.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryParser.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryObject\SuchThatClause.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\PKB\PKBFacade.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\SPTokenizer.h">
+      <Filter>Header Files\SP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\SelectSynonymEvaluator.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\QP\QueryEvaluator\ResultConsolidator.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\ValidatorUtil.h">
+      <Filter>Header Files\QP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\FollowsExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\ParentExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\ModifiesExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\UsesExtractor.h">
+      <Filter>Header Files\SP\DesignExtractor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SourceProcessor\Parser.h">
+      <Filter>Header Files\SP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Entity\Entity.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Pattern\Pattern.h">
+      <Filter>Header Files\PKB</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

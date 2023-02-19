@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\SourceProcessor\AST.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\FollowsExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\ModifiesExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\ParentExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\DesignExtractor\UsesExtractor.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\Parser.cpp" />
+    <ClCompile Include="..\source\SourceProcessor\SPTokenizer.cpp" />
+    <ClCompile Include="..\source\TNode.cpp" />
+    <ClCompile Include="..\source\Entity\Entity.cpp" />
+	<ClCompile Include="..\source\Pattern\Pattern.cpp" />
+    <ClCompile Include="..\source\Relationship\Relationship.cpp" />
+    <ClCompile Include="..\source\PKB\Manager\EntityManager.cpp" />
+    <ClCompile Include="..\source\PKB\Manager\RelationshipManager.cpp" />
+    <ClCompile Include="..\source\PKB\Manager\PatternManager.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\EntityStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\RelationshipStorage.cpp" />
+    <ClCompile Include="..\source\PKB\Storage\PatternStorage.cpp" />
+    <ClCompile Include="..\source\PKB\PKBFacade.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\DesignEntity.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\Declaration.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\PatternClause.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\SuchThatClause.cpp" />
+    <ClCompile Include="..\source\QP\QueryObject\QueryObject.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\QueryEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\SelectSynonymEvaluator.cpp" />
+    <ClCompile Include="..\source\QP\QueryEvaluator\ResultConsolidator.cpp" />
+    <ClCompile Include="..\source\ValidatorUtil.cpp" />
+    <ClCompile Include="..\source\QP\QueryParser.cpp" />
+    <ClCompile Include="..\source\QP\QueryManager.cpp" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\DesignExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\EntityExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\FollowsExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\ModifiesExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\ParentExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\DesignExtractor\UsesExtractor.h" />
+    <ClInclude Include="..\source\SourceProcessor\Parser.h" />
+    <ClInclude Include="..\source\SourceProcessor\AST.h" />
+    <ClInclude Include="..\source\SourceProcessor\SPTokenizer.h" />
+    <ClInclude Include="..\source\TNode.h" />
+    <ClInclude Include="..\source\Entity\Entity.h" />
+	<ClInclude Include="..\source\Pattern\Pattern.h" />
+    <ClInclude Include="..\source\Relationship\Relationship.h" />
+    <ClInclude Include="..\source\ValidatorUtil.h" />
+    <ClInclude Include="..\source\PKB\Manager\RelationshipManager.h" />
+    <ClInclude Include="..\source\PKB\Manager\EntityManager.h" />
+    <ClInclude Include="..\source\PKB\Manager\PatternManager.h" />
+    <ClInclude Include="..\source\PKB\Storage\EntityStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\RelationshipStorage.h" />
+    <ClInclude Include="..\source\PKB\Storage\PatternStorage.h" />
+    <ClInclude Include="..\source\PKB\PKBFacade.h" />
+    <ClInclude Include="..\source\QP\QueryObject\DesignEntity.h" />
+    <ClInclude Include="..\source\QP\QueryObject\Declaration.h" />
+    <ClInclude Include="..\source\QP\QueryObject\PatternClause.h" />
+    <ClInclude Include="..\source\QP\QueryObject\SuchThatClause.h" />
+    <ClInclude Include="..\source\QP\QueryObject\QueryObject.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\QueryEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\SelectSynonymEvaluator.h" />
+    <ClInclude Include="..\source\QP\QueryEvaluator\ResultConsolidator.h" />
+    <ClInclude Include="..\source\QP\QueryParser.h" />
+    <ClInclude Include="..\source\QP\QueryManager.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC21A1EA-D2C6-4D14-A2B4-E025B64BDE81}</ProjectGuid>
+    <RootNamespace>SPA</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
